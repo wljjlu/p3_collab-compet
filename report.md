@@ -1,6 +1,6 @@
 # Report
 
-In this project, the learning algorithm of deep deterministic policy gradient(DDPG) has been implemented to solve the control problem of  double-jointed arm. The DDPG algoritm is good at tackling reinforcement-learning problem with continuous state spaces and continuous action spaces.
+In this project, the learning algorithm of deep deterministic policy gradient(DDPG) has been implemented to train an agent to play tennis with each other. The DDPG algoritm is good at tackling reinforcement-learning problem with continuous state spaces and continuous action spaces.
 
 ## DDPG
 
@@ -11,14 +11,14 @@ In this project, the learning algorithm of deep deterministic policy gradient(DD
 - Input Layer: 33
 - Fully connected Layer 1: 256 (with relu as activation function)
 - Fully connected Layer 2: 128 (with relu as activation function)
-- Output Layer: 4
+- Output Layer: 2
 
 ##### Critic
 
 - Input Layer: 33
-- Fully connected Layer 1: 256(hidden layer) + 4(action) (with relu as activation function)
+- Fully connected Layer 1: 256(hidden layer) + 2(action) (with relu as activation function)
 - Fully connected Layer 2: 128 (with relu as activation function)
-- Output Layer: 4
+- Output Layer: 1
 
 ### Hyper-parameters
 
@@ -28,7 +28,6 @@ In this project, the learning algorithm of deep deterministic policy gradient(DD
 - TAU of Soft Updating = 1e-3
 - Learning Rate of Actor Network = 1e-4
 - Learning Rate of Critic Network = 1e-3
-- Target Network Update Interval = 4
 - Learning Timesteps = 5
 - Multi Learning Times = 5
 
@@ -36,9 +35,7 @@ Both of the actor and the critic network is updated `Multi Learning Times` after
 
 ### Plot of Rewards
 
-![Vanilla DQN Scores](images/scores.png)
-
-DDPG solved the problem in 100 episodes.
+![DDPG Scores](images/scores.png)
 
 ## Future Improvement
 
