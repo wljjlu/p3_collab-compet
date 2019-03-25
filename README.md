@@ -6,9 +6,9 @@ This project contains a solution to the third project of udacity Deep-Reinforcem
 
 ![Trained Agent](images/playing.gif)
 
-In this environment, two agents control rackets to bounce a ball over a net. If an agent hits the ball over the net, it receives a reward of +0.1.  If an agent lets a ball hit the ground or hits the ball out of bounds, it receives a reward of -0.01.  Thus, the goal of each agent is to collaborate with each other to keep the ball in play as long as possible.
+In this environment, two agents control rackets to bounce a ball over a net. If an agent hits the ball over the net, it receives a reward of +0.1.  If an agent lets a ball hit the ground or hits the ball out of bounds, it receives a reward of -0.01.  Thus, the goal of each agent is **to collaborate with each other** to keep the ball in play as long as possible.
 
-The observation space consists of 8 variables corresponding to the position and velocity of the ball and racket. Two continuous actions are available, corresponding to movement toward (or away from) the net, and jumping. Each agent receives its own, local observation. That means we can treat the two agents as one, and train one agent using the data from local observations, actions and rewards, then use it to play with itself.
+The observation space consists of 8 variables corresponding to the position and velocity of the ball and racket. Two continuous actions are available, corresponding to movement toward (or away from) the net, and jumping. Each agent receives its own, local observation. **That means we can treat the two agents as one, and train one agent using the data from local observations, actions and rewards, then use it to play with itself.**
 
 The task is episodic, and in order to solve the environment, the agents must get an average score of +0.5 (over 100 consecutive episodes, after taking the maximum over both agents). Specifically,
 
