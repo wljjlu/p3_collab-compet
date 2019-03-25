@@ -2,7 +2,7 @@
 
 ### Introduction
 
-This project contains a solution to the third project of udacity Deep-Reinforcement-Learning nano-degree, which trains the 
+This project contains a solution to the third project of udacity Deep-Reinforcement-Learning nano-degree, which trains two agents to play with tennis. 
 
 ![Trained Agent](images/playing.gif)
 
