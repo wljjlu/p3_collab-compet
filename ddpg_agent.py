@@ -10,7 +10,7 @@ import torch.nn.functional as F
 import torch.optim as optim
 
 BUFFER_SIZE = int(1e6)      # replay buffer size
-BATCH_SIZE = 512            # minibatch size
+BATCH_SIZE = 1024           # minibatch size
 GAMMA = 0.99                # discount factor
 LEARNING_STEP = 5          # every n step when learning
 MULTI_LEARNING_TIMES = 5   # learning times in every learning step
