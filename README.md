@@ -31,4 +31,4 @@ The environment is considered solved, when the average (over 100 episodes) of th
 
 ### Instructions
 
-Follow the instructions in `Tennis.ipynb` and run each cell.  
+Follow the instructions in `Tennis.ipynb` and run each cell.
